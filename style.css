@@ -164,8 +164,10 @@ ul li a:hover{
 .image img{
     width: 90%;
     max-width: 25rem;
-    height: auto;
-    border-radius: 100%;
+    height: 29rem;
+    object-fit: cover;
+    border-radius: 20%;
+    border: 2px solid var(--accent-color1);
 }
 
 /* -----------------Education------------------ */
@@ -489,7 +491,7 @@ ul li a:hover{
 /* -----------------------------Projects--------------------- */
 
 #projects {
-    padding: 0rem 2rem;
+    padding: 0rem 1rem;
     margin-top: 40px;
     background-color: var(--bg-color);
 }
@@ -508,24 +510,27 @@ ul li a:hover{
     align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 .project-info {
-    max-width: 40%;
+    flex: 1;
+    min-width: 300px;
+    max-width: 100%;
 } 
 .project-info h3 {
-    font-size: 3rem;
+    font-size: clamp(2rem, 4vw, 3rem);
     color: var(--text-primary);
     margin-bottom: 1rem;
 } 
 .project-info h4 {
-    font-size: 1.8rem;
+    font-size: clamp(1.5rem, 3vw, 1.8rem);
     color: var(--text-primary);
     margin-bottom: 1rem;
 }  
 .project-info p {
     color: var(--text-primary);
     margin: 1rem 0;
+    font-size: clamp(0.9rem, 2vw, 1rem);
 } 
 .tech-stack {
     color: var(--text-secondary);
@@ -539,7 +544,7 @@ hr{
 .project-links a {
     display: inline-block;
     margin-right: 1rem;
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 4vw, 2.5rem);
     color: var(--text-primary);
     transition: color 0.3s;
 } 
@@ -548,18 +553,22 @@ hr{
 }
 .project-slider {
     position: relative;
-    max-width: 50%;
+    flex: 1;
+    min-width: 300px;
+    max-width: 100%;
     overflow: hidden;
     border-radius: 10px;
 } 
 .slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width: 100%;
 }  
 .slider img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
-    background-size: cover;
+    object-fit: cover;
 } 
 .prev-btn,
 .next-btn {
@@ -570,8 +579,9 @@ hr{
     color: var(--text-secondary);
     border: none;
     cursor: pointer;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     z-index: 10;
+    border-radius: 50%;
 } 
 .prev-btn {
     left: 10px;
@@ -772,15 +782,18 @@ form input, form textarea{
         margin-bottom: 20px;
     }
     .project-card {
-        display: flex;
         flex-direction: column-reverse;
+        gap: 1rem;
     }
+    
+    .project-info,
     .project-slider {
         max-width: 100%;
-    } 
+    }
+    
     .project-info {
-        max-width: 100%;
-    } 
+        text-align: center;
+    }
 }
 
 @media (max-width: 750px){
@@ -849,5 +862,14 @@ form input, form textarea{
         font-size: 1.5rem;
         margin-bottom: 50px;
         margin-top: 50px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #projects {
+        padding: 0 0.5rem;
+    }
+    
+    .project-card {
+        margin-bottom: 40px;
     }
 }
