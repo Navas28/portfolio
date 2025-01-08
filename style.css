@@ -769,6 +769,35 @@ form input, form textarea{
         width: 500px;
         height: 100vh;
     }
+    .section-container{
+        padding: 10rem 1rem 0rem 1rem;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .image{
+        grid-area: 1/1/2/2;
+    }
+    .action-btns{
+        margin: auto;
+    }
+    .sub-title{
+        padding-bottom: 0px;
+        padding-top:100px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .contact-right{
+        width: 90%;
+    }
+    #contact{
+        height: 90vh;
+    }
 }
 
 @media (max-width: 768px) {
@@ -817,35 +846,6 @@ form input, form textarea{
     ul li a{
         font-size: 1.25rem;
     }
-    .section-container{
-        padding: 10rem 1rem 5rem 1rem;
-        text-align: center;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .image{
-        grid-area: 1/1/2/2;
-    }
-    .action-btns{
-        margin: auto;
-    }
-    .sub-title{
-        padding-bottom: 0px;
-        padding-top:100px;
-    }
-    .row{
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 50px;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0px;
-    }
-    .contact-right{
-        width: 90%;
-    }
-    #contact{
-        height: 90vh;
-    }
 }
 
 @media (max-width: 520px){
@@ -868,7 +868,6 @@ form input, form textarea{
     #projects {
         padding: 0 0.5rem;
     }
-    
     .project-card {
         margin-bottom: 40px;
     }
