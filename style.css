@@ -798,6 +798,10 @@ form input, form textarea{
     #contact{
         height: 90vh;
     }
+    .education  {
+        padding: 0px;
+        height: auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -808,7 +812,6 @@ form input, form textarea{
     .education-card {
         width: 90%;
         max-width: 350px; 
-        margin-bottom: 20px;
     }
     .project-card {
         flex-direction: column-reverse;
