@@ -193,13 +193,16 @@ ul li a:hover{
     gap: 80px;
     flex-wrap: wrap; 
     margin-top: 2%;
+    max-width: 100%; 
+    overflow-x: hidden;
 }
 .education-card {
     background: var(--bg-color);
     color: var(--text-primary);
     padding: 30px;
-    width: 500px;
     height: 300px;
+    width: 90%;
+    max-width: 500px; 
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--border-color);
@@ -610,6 +613,10 @@ hr{
     color: var(--accent-color1);
 } 
 .certificate-container {
+    max-width: 100%; 
+    overflow-x: hidden;
+}
+.certificate-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -673,6 +680,8 @@ hr{
 }
 .row{
     display: flex;
+    max-width: 100%; 
+    overflow-x: hidden;
 }
 .contact-left p{
     margin-top: 30px;
@@ -779,12 +788,12 @@ form input, form textarea{
     }
     .sub-title{
         padding-bottom: 0px;
-        padding-top:auto;
+        padding-top:20px;
     }
     .row{
         display: flex;
-        flex-direction: column-reverse;
-        gap: 50px;
+        flex-direction: column;
+        gap: 20px;
         justify-content: center;
         align-items: center;
         margin-top: 0px;
@@ -793,10 +802,11 @@ form input, form textarea{
         width: 90%;
     }
     #contact{
-        height: 90vh;
+        height: auto;
+        padding: 2rem 0;
     }
     .education  {
-        padding: 0px;
+        padding: 2rem 1rem;
         height: auto;
     }
     .section-title {
@@ -808,10 +818,14 @@ form input, form textarea{
     .education-container {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
+        padding: 10px 0;
     }
     .education-card {
         width: 90%;
         max-width: 350px; 
+        margin: 0 auto;
+        padding: 15px;
     }
     .project-card {
         flex-direction: column-reverse;
@@ -820,6 +834,7 @@ form input, form textarea{
     .project-info,
     .project-slider {
         max-width: 100%;
+        width: 100%;
     } 
     .project-info {
         text-align: center;
