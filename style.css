@@ -176,7 +176,6 @@ ul li a:hover{
     color: var(--text-primary);
     text-align: center;
     background-color: var(--bg-color);
-    min-height: 100vh;
 }
 .education-title{
     font-size: 2.5em;
@@ -614,7 +613,6 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     width: 100%;
     flex-direction: column;
 }  
@@ -666,7 +664,6 @@ hr{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 70vh;
 }
 .contact-left{
     flex-basis: 35%;
@@ -782,7 +779,7 @@ form input, form textarea{
     }
     .sub-title{
         padding-bottom: 0px;
-        padding-top:100px;
+        padding-top:auto;
     }
     .row{
         display: flex;
