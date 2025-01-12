@@ -6,10 +6,20 @@ icon.onclick = function(){
     document.body.classList.toggle("light-theme")
     if(document.body.classList.contains("light-theme")){
         icon.src = "image/icons8-sun-50 (1).png";
+        localStorage.setItem("theme", "light");
     }else{
         icon.src = "image/icons8-moon-50 (2).png";
+        localStorage.setItem("theme", "dark");
     }
 }
+
+    if(localStorage.getItem("theme") === "light"){
+      document.body.classList.add("light-theme");
+      icon.src = "image/icons8-sun-50 (1).png";
+    }else{
+      document.body.classList.remove("dark-theme");
+      icon.src = "image/icons8-moon-50 (2).png";
+    }
 
 //             PROJECT IMAGE
 
